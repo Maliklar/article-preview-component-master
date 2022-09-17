@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    font-size: 13px;
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%); 
+}
+
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: content-box;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 30px 0px var(--LightGrayishBlue);
+    border-radius: 10px;
+    height: 280px;
+    display: flex;
+    max-width: 730px;
+    overflow: hidden;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    flex: 39.5%;
+    min-width: 39.5%;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+}
+
+.content{
+    flex: 100%;
+    padding: 21px 38px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p{
+    color: var(--DesaturatedDarkBlue);
+    margin: 0px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+.user-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.avatar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.date{
+    color: var(--DesaturatedDarkBlue);
+}
+
+.share{
+    border-radius: 100%;
+    background-color: var(--LightGrayishBlue);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 700px) {
+    .card{
+        flex-direction: column;
+        width: 90%;
+        height: 500px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
